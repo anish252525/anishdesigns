@@ -10,7 +10,8 @@ export default function Brands({ onOpenPDF }: BrandsProps) {
   const brands = [
     { 
       title: "Lumino Technology", 
-      desc: "Brand Identity", 
+      desc: "Brand Identity — Click to view PDF", 
+      pdf: "https://raw.githubusercontent.com/anish252525/anishdesigns/main/Lumino_Tech_Brand_Guide.pdf"
     },
     { 
       title: "Sajilo Care", 
