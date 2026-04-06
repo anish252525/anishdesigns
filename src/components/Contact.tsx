@@ -9,8 +9,8 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="section-padding border-t border-gray-200">
-      <div className="grid md:grid-cols-[0.4fr_1.6fr] gap-12 md:gap-24">
+    <section id="contact" className="section-padding border-t border-gray-200 bg-[#fafafa]">
+      <div className="section-layout">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,16 +22,16 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
           {contactInfo.map((info) => (
             <div key={info.label} className="space-y-3">
-              <h4 className="text-[0.7rem] font-bold tracking-widest text-gray-500 uppercase">{info.label}</h4>
+              <h4 className="text-[0.75rem] font-semibold tracking-[0.1em] text-gray-500 uppercase">{info.label}</h4>
               {info.href ? (
                 <a 
                   href={info.href} 
-                  className="text-lg text-[#1a1a1a] hover:opacity-50 transition-opacity block"
+                  className="text-[1.05rem] text-[#1a1a1a] hover:opacity-50 transition-opacity block font-medium"
                 >
                   {info.value}
                 </a>
               ) : (
-                <span className="text-lg text-[#1a1a1a] block">{info.value}</span>
+                <span className="text-[1.05rem] text-[#1a1a1a] block font-medium">{info.value}</span>
               )}
             </div>
           ))}
